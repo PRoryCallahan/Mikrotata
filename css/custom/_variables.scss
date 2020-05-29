@@ -1,11 +1,15 @@
-$primary: #8b0000; // dark red
-$info: #7f7f7f; // grey
+/*
+Create your own 'skin' to the Mikrotata theme by swapping out colors and fonts below:
+*/
+
+$primary: #212121; // elegant-color-dark
+$info: #9e9e9e; // grey
 
 $code-heading-background: #dededc; // light grey
 $code-text-color: #b6b6b6; // off white
 
-$font-family-serif:      'Literata', "Palatino Linotype", "Book Antiqua", Palatino, serif;
+$font-family-serif:      'Noto+Serif', "Palatino Linotype", "Book Antiqua", Palatino, serif;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-serif !default;
 
-$headings-font-family:         'Raleway', sans-serif;
+$headings-font-family:         'Noto+Sans', sans-serif;

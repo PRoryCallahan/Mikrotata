@@ -5,6 +5,9 @@ date: 2020-05-28 14:00:00
 author: Your Name
 summary: We'll use this post to work out what we need to do to style an individual posts... let's get going!
 ---
+
+You can move this file to your `_drafts` folder where it will be unpublished from your page, but you can save it there as a 'cheat sheet' for reference.
+
 # Heading 1
 ## Heading 2
 ### Heading 3

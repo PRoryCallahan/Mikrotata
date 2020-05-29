@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A sample post outlining language support
+date: 2020-05-28 20:00:00
 author: Patrick Callahan
 summary: We'll use this post to work out Elachista's display of multiple languages...
 ---
@@ -16,9 +17,11 @@ in `_includes.portfolio.html` change clientId to `yourURL`
 
 Links to Alpheios
 
-```
-<div class="alpheios-enabled"
-```
+`<div class="alpheios-enabled">`
+
+### Disable Alpheios in Section
+
+`data-alpheios-ignore="all"`
 
 <table class="table table-striped">
   <thead>
@@ -48,9 +51,3 @@ Links to Alpheios
       <td>Ancient Ethiopic</td>
       <td>gez</td>
     <tr>
-  </tbody>
-</table>
-
-### Disable Alpheios in Section
-
-`data-alpheios-ignore="all"`
