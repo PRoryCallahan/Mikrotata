@@ -1,0 +1,22 @@
+# Site settings
+title: "Your Site Title"
+email: # you@whatever.edu
+author: #your name
+description: # A Jekyll theme for displaying
+url: "https://prorycallahan.github.io/Mikrotata/" # Replace with the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+
+
+# Build settings
+permalink: :title/
+sass:
+  sass_dir: css
+
+# Social icons
+show_social_icons: true
+github_username: #github_username
+twitter_username: #twitter_username
+
+# plugins
+plugins: [jekyll-paginate]
+paginate: 5

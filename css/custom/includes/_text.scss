@@ -1,0 +1,185 @@
+#text {
+  h1, h2, h3, h4 {
+    color: $primary;
+    padding-top: 10px;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 12px 12px 3px rgba(34, 25, 25, 0.4);
+    -moz-box-shadow: 12px 12px 3px rgba(34, 25, 25, 0.4);
+    -webkit-box-shadow: 12px 12px 3px rgba(34, 25, 25, 0.4);
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .ml-1 {
+    margin-left: ($spacer * 1) !important;
+  }
+
+  /******************************
+ * STYLES FOR DISPLAYING CODE
+ ******************************/
+// heading style for a code section
+h5 {
+  background: none repeat scroll 0% 0% $code-heading-background;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin-bottom: 0px;
+  border-radius: 3px 3px 0px 0px;
+  }
+
+  // main code section style
+.highlight {
+  pre {
+    font-size: 18px;
+    padding: 10px;
+    code {
+      color: $code-text-color;
+      }
+    }
+  }
+      // copy btn style
+.btn-copy-code {
+  color: $gray-900;
+  padding-right: 5px;
+  float: right;
+  background: $code-heading-background;
+  border: 0;
+  font-size: 12px;
+  margin-top: -30px;
+  &:hover {
+    cursor: pointer;
+    color: $primary;
+    }
+  }
+}
+
+/* STIKHOI v.4: CSS for rendering verse snippets
+   on the web, with a special eye toward Greek &
+   Latin poetry. Use stikhoi.js for prettier numbers.
+
+   Author: Den McHenry
+*/
+/* STIKHOI begins here */
+/* Suppress line numbers. */
+
+/*ol.verse {
+  margin-left: 2em;
+  padding-left: 0.5em;
+}
+*/
+ol.verse li {
+  list-style-type: none;
+  padding: 0.1em 0;
+}
+/* Reveal line numbers conditionally based
+	on the value of the start attribute. */
+
+[start$="1"] li:nth-child(5n),
+[start$="2"] li:nth-child(5n+4),
+[start$="3"] li:nth-child(5n+3),
+[start$="4"] li:nth-child(5n+2),
+[start$="5"] li:nth-child(5n+1),
+[start$="6"] li:nth-child(5n),
+[start$="7"] li:nth-child(5n+4),
+[start$="8"] li:nth-child(5n+3),
+[start$="9"] li:nth-child(5n+2),
+[start$="0"] li:nth-child(5n+1) {
+  list-style-type: decimal;
+}
+/* Indent even numbered lines. */
+
+[start$="1"].couplets li:nth-child(2n),
+[start$="2"].couplets li:nth-child(2n+1),
+[start$="3"].couplets li:nth-child(2n),
+[start$="4"].couplets li:nth-child(2n+1),
+[start$="5"].couplets li:nth-child(2n),
+[start$="6"].couplets li:nth-child(2n+1),
+[start$="7"].couplets li:nth-child(2n),
+[start$="8"].couplets li:nth-child(2n+1),
+[start$="9"].couplets li:nth-child(2n),
+[start$="0"].couplets li:nth-child(2n+1) {
+  text-indent: 1em;
+}
+/* STROPHES */
+/* Proper indentation for strophes. This varies depending
+	upon which line in the pattern begins the citation.
+	Lines within a strophe are given letters: A, B, C, & D. */
+
+ol:not(.from-B):not(.from-C).indent-C li:nth-child(3n+3),
+.from-B.indent-C li:nth-child(3n+2),
+.from-C.indent-C li:nth-child(3n+1),
+ol:not(.from-B):not(.from-C):not(.from-D).indent-D li:nth-child(4n+4),
+.from-B.indent-D li:nth-child(4n+3),
+.from-C.indent-D li:nth-child(4n+2),
+.from-D.indent-D li:nth-child(4n+1) {
+  text-indent: 1em;
+  padding-bottom: 1em;
+}
+
+ol:not(.from-B):not(.from-C).indent-C-D li:nth-child(4n+3),
+.from-B.indent-C-D li:nth-child(4n+2),
+.from-C.indent-C-D li:nth-child(4n+1),
+.from-D.indent-C-D li:nth-child(4n) {
+  text-indent: 1em;
+}
+
+ol:not(.from-B):not(.from-C):not(.from-D).indent-C-D li:nth-child(4n+4),
+.from-B.indent-C-D li:nth-child(4n+3),
+.from-C.indent-C-D li:nth-child(4n+2),
+.from-D.indent-C-D li:nth-child(4n+1) {
+  text-indent: 2em;
+  padding-bottom: 1em;
+}
+/* JAVASCRIPT-DEPENDENT STYLES */
+/* A CSS counter that replaces the native
+   numbering of ordered lists. */
+/* Conceal line numbers in each ordered list. */
+
+ol.verse.jQuery li {
+  list-style-type: none;
+}
+/* Replace the OL with a CSS counter. */
+
+ol.verse.jQuery {
+  counter-reset: poem;
+  display: inline-block;
+}
+/* Each line item is counted. */
+
+ol.verse.jQuery li {
+  counter-increment: poem;
+}
+/* Prepare to display the counter after each line. */
+
+ol.verse.jQuery li:after {
+  content: counter(poem);
+  float: right;
+  padding-left: 3em;
+  color: #666;
+  font-size: 0.8em;
+  padding-top: 0.2em;
+}
+/* Suppress the counter. */
+
+ol.verse.jQuery li:after,
+ol.verse.jQuery li:after {
+  visibility: hidden;
+}
+/* Reveal counter where appropriate. */
+
+[start$="1"].jQuery li:nth-child(5n):after,
+[start$="2"].jQuery li:nth-child(5n+4):after,
+[start$="3"].jQuery li:nth-child(5n+3):after,
+[start$="4"].jQuery li:nth-child(5n+2):after,
+[start$="5"].jQuery li:nth-child(5n+1):after,
+[start$="6"].jQuery li:nth-child(5n):after,
+[start$="7"].jQuery li:nth-child(5n+4):after,
+[start$="8"].jQuery li:nth-child(5n+3):after,
+[start$="9"].jQuery li:nth-child(5n+2):after,
+[start$="0"].jQuery li:nth-child(5n+1):after {
+  visibility: visible;
+}
