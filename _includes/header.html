@@ -1,21 +1,22 @@
 <!-- NAV -->
-<nav class="navbar navbar-expand-md navbar-dark py-4">
-  <div class="container">
-    <a href="{{ site.baseurl }}/" class="navbar-brand">
-      <h3 class="d-inline align-middle pl-3 text-white">Your Site Title</h3>
-    </a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a href="{{ site.baseurl }}/portfolio/" class="nav-link">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a href="{{ site.baseurl }}/archive/" class="nav-link">Archive</a>
-        </li>
-      </ul>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="{{ site.baseurl }}/"><h3 class="d-inline align-middle pl-3 text-primary">Your Site Title</h3></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a href="{{ site.baseurl }}/portfolio/" class="nav-link">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a href="{{ site.baseurl }}/archive/" class="nav-link">Archive</a>
+      </li>
+    </ul>
+    <!-- replace with refined search OR sub navbar with POV search feature <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>-->
   </div>
 </nav>

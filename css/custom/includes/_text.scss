@@ -1,4 +1,4 @@
-#portfolio {
+#text {
   h1, h2, h3, h4 {
     color: $primary;
     padding-top: 10px;
@@ -16,6 +16,14 @@
 
   .ml-1 {
     margin-left: ($spacer * 1) !important;
+  }
+
+  .text-large {
+    font-size: 200%;
+  }
+
+  .center-tab {
+    margin-left: 200px;
   }
 
   /******************************

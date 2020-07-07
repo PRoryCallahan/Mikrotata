@@ -1,8 +1,8 @@
 # Site settings
 title: "Your Site Title"
 email: # you@whatever.edu
-author: #your name
-description: # A Jekyll theme for displaying
+author: Your Name #your name
+description: Your brief description of your site # A Jekyll theme for displaying
 url: "https://prorycallahan.github.io/Mikrotata/" # Replace with the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/Mikrotata" # the subpath of your site, e.g. /blog
 

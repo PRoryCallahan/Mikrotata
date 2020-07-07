@@ -1,3 +1,6 @@
+/* Optional js for prettier print-like
+   line numbers with counter reset */
+
 var verses = document.querySelectorAll('ol.verse');
 
 verses.forEach(function(fragment) {
