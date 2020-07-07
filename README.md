@@ -26,8 +26,8 @@ _for details see language support post_
 
 Mikrotata comes bundled with a few basic supports that should make life easier for the average Classicist looking to branch into digital work:
 
-1. (Alpheios)[https://alpheios.net/]. All you need to do is set a new ClientID in the `alpheios.js`.
-2. (Stikhoi)[https://codepen.io/denmch/pen/ExVqKEo]. A set of CSS rules with a little Javascript package to make the display of poetry a little more elegant than what is typically seen online.
+1. [Alpheios](https://alpheios.net/). All you need to do is set a new ClientID in the `alpheios.js` file in your `js` folder.
+2. [Stikhoi](https://codepen.io/denmch/pen/ExVqKEo). A set of CSS rules with a little Javascript package to make the display of poetry a little more elegant than what is typically seen online first designed by Den McHenry with a few cosmetic changes by Patrick R. Callahan.
 
 ## Code Sharing Support
 
