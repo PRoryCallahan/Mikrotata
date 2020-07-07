@@ -3,7 +3,7 @@
 _ὕπαγε, περιέρχου καὶ οὕτως διακίνει ἀπὸ τῶν μεγίστων ἐπὶ τὰ μικρότατα._
 *Epictetus, Discourses 3.22*
 
-Mikrotata is a minimal Bootstrap Jekyll theme designed by Patrick R. Callahan. It is designed to provide Classicists and Digital Humanists an alternative to Minima with some of the basic tools required to transcribe and present texts in Classical (and other) languages. It is a stripped down version of the Jekyll Bootstrap installation outlined by Nick Riebeek [here](https://experimentingwithcode.com/) with the addition of a few essentials tools for the Digital Classicist.
+Mikrotata is a minimal Bootstrap Jekyll theme designed by Patrick R. Callahan. It is designed to provide Classicists and Digital Humanists an alternative to Minima with some of the basic tools required to transcribe and present texts in Classical (and other) languages. It began as a stripped down version of the Jekyll Bootstrap installation outlined by Nick Riebeek [here](https://experimentingwithcode.com/) with the addition of a few essentials tools for the Digital Classicist.
 
 ## Installation
 
