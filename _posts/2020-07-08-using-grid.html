@@ -1,0 +1,115 @@
+---
+layout: post
+title: A sample post outlining bootstrap grid for parallel texts
+date: 2020-07-08 13:00:00
+author: Your Name
+summary: We'll use this post to parallel text and translation...
+---
+
+<h2>Bootstrap Grid</h2>
+
+With support for up to 12 columns and a variety of ways to style them, I would recommend reviewing <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="blank">Bootstrap documentation</a> to get a sense of all the possible way to format texts in your Portfolio. What follows below are just some quick-start suggestions. You can either see how it display in browser or look at the file in your text editor where I included some notes to show you how the various html elements work.
+
+<h2>Text & Translation</h2>
+
+<h3>Homer, <em>Iliad</em> 1.1&#8211;21</h3>
+
+<div class="container"> <!-- sets the container for the parallel texts -->
+  <div class="row"> <!-- marks the row -->
+    <div class="col"> <!-- begins column 1-->
+
+      <h4>Greek Text (<a href="http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0133" target="blank">Perseus</a> based on the 1920 OCT)</h4>
+
+    <ol class="verse" lang="grc">
+      <li>μῆνιν ἄειδε θεὰ Πηληϊάδεω Ἀχιλῆος</li>
+      <li>οὐλομένην, ἣ μυρί᾽ Ἀχαιοῖς ἄλγε᾽ ἔθηκε,</li>
+      <li>πολλὰς δ᾽ ἰφθίμους ψυχὰς Ἄϊδι προΐαψεν</li>
+      <li>ἡρώων, αὐτοὺς δὲ ἑλώρια τεῦχε κύνεσσιν</li>
+      <li>οἰωνοῖσί τε πᾶσι, Διὸς δ᾽ ἐτελείετο βουλή,</li>
+      <li>ἐξ οὗ δὴ τὰ πρῶτα διαστήτην ἐρίσαντε</li>
+      <li>Ἀτρεΐδης τε ἄναξ ἀνδρῶν καὶ δῖος Ἀχιλλεύς.</li>
+    </ol>
+
+</div> <!-- closes column 1 -->
+
+<div class="col"> <!-- begins column 2 -->
+
+<h4>English Translation (Alexander Pope)</h4>
+
+<ol class="verse">
+  <li>Achilles’ wrath, to Greece the direful spring</li>
+  <li>Of woes unnumber’d, heavenly goddess, sing!</li>
+  <li>That wrath which hurl’d to Pluto’s gloomy reign</li>
+  <li>The souls of mighty chiefs untimely slain;</li>
+  <li>Whose limbs unburied on the naked shore,</li>
+  <li>Devouring dogs and hungry vultures tore.</li>
+  <li>Since great Achilles and Atrides strove,</li>
+</ol>
+
+  </div> <!-- closes column 2-->
+
+</div> <!-- closes the row -->
+</div> <!-- closes the parallel text & translation container -->
+
+<h2>Text & Commentary</h2>
+
+<p>The above is fine when you have a text and a translation that are relatively aligned, but when you want to add comments parallel to a text it can sometimes become unweildy as the focus text is scrolled out of view. One work around for this problem is use Bootstrap's <code>stick-top</code> attribute inside the focus text column to keep it aligned as your user scrolls through the commentary. If you have a larger text (imagine commenting on a whole book of the <i>Aeneid</i> instead of 11 lines!), just set a new row when you are done with commenting on one portion of the text and are ready to begin the next section.</p>
+
+<h3>Vergil, <em>Aeneid</em> 1.1&#8211;11</h3>
+
+<div class="container"> <!-- sets the container for the parallel texts -->
+  <div class="row"> <!-- marks the row -->
+
+    <div class="col"> <!-- begins column 1-->
+    <div class="sticky-top">
+      <h4>Focus Text</h4>
+
+    <ol class="verse">
+      <li>Arma virumque canō, Trōiae quī prīmus ab ōrīs</li>
+      <li>Ītaliam fātō profugus Lāvīniaque vēnit</li>
+      <li>lītora, multum ille et terrīs iactātus et altō</li>
+      <li>vī superum, saevae memorem Iūnōnis ob īram,</li>
+      <li>multa quoque et bellō passus, dum conderet urbem</li>
+      <li>īnferretque deōs Latiō; genus unde Latīnum</li>
+      <li>Albānīque patrēs atque altae moenia Rōmae.</li>
+      <li>Mūsa, mihī causās memorā, quō nūmine laesō</li>
+      <li>quidve dolēns rēgīna deum tot volvere cāsūs</li>
+      <li>īnsignem pietāte virum, tot adīre labōrēs</li>
+      <li>impulerit. Tantaene animīs caelestibus īrae?</li>
+    </ol>
+
+</div> <!-- closes column 1 -->
+</div>
+
+<div class="col"> <!-- begins column 2 -->
+
+<h4>Sample Commentary (borrowed from Francese and Reedy's <a href="http://dcc.dickinson.edu/vergil-aeneid/vergil-aeneid-i-1-11" target="blank">DCCC Commentary on selections of the Aeneid</a>)</h4>
+
+<p><b>1: arma virumque:</b> the first word, indicating war as the subject matter of the poem, challenges comparison with the Iliad; the second challenges comparison with the Odyssey. Throughout the Aeneid Vergil sets his Roman theme in tension with the heroic world of Homer; Aeneas has to leave the one world and enter the other (Williams). primus: “first,” not here in the sense of “the first who,” but “at the first,” “in the beginning” (Frieze). The meaning is not that Aeneas was the first of a series of Trojans who settled in Italy, but merely that he marks the first beginning of the Roman race (Bennett).</p>
+
+<p><b>2: Italiam:</b> acc. of the limit of motion. In prose a preposition (ad or in) would be required (F-B) (AG 428g). Note that the initial I of Italia is here used as long. In prose, as Quintilian expressly assures us, this I is short. But adherence to this quantity would have made the word impossible to use in the dactylic hexameter (Bennett). fato: belongs to both profugus and venit (F-B). Lavinia: i.e., the western coast of Italy, where is the town of Lavinium, assumed to be named for Lavinia, the Italian bride of Aeneas (G-K). Trisyllabic, by synizesis (Austin). Lavinia is sometimes scanned as four syllables (6.764, 7.72), sometimes as three, the i being pronounced as y (see 6.33 quīn prōtinus omnia) (AG 603c, N). Italiam...Lavinia: form a good illustration of one of Vergil’s favorite devices—transition from the general to the specific; the gradual narrowing down of the thing referred to (Carter).</p>
+
+<p><b>3: multum:</b> Here an adverb, limiting iactatus (Bennett). ille: the pronoun is in a kind of apposition with qui (G-K). terris, alto: ablatives of the place where, without a preposition, which is poetic (F-B) (AG 429.4). alto: altum is regularly used as a noun ( = altum mare) (Comstock).</b>
+
+<p><b>4: superum:</b> for superorum, “of the gods above”; equivalent here to “divine,” referring to vi, and meaning especially Juno (Frieze) (AG 49d). memorem: transferred epithet: it was Juno that never forgot (Knapp); “relentless,” that forgets not (Frieze).</b>
+
+<p><b>5: multa quoque et bello passus:</b> “and having suffered much besides in war” (Bennett). dum conderet: Dum takes the subjunctive here because purpose or intention is denoted (Wetherell) (AG 553).</p>
+
+<p><b>6: deos:</b> i.e., the Penates or “household gods,” on whose safety the fortunes of the “house of Troy” depended: a city regarded as a great family had its public Penates as each family had its private ones (Page). Latio: dative with a verb of motion, which is poetic (AG 428g); in Latium would be the normal prose construction. inferretque deos Latio: the shade of Hector had entrusted the Penates of Troy to Aeneas, and it was a major feature of his mission that he had to establish a continuity of religious worship between Troy and Rome (Williams). unde: “from which event,” supply ortum est, “arose” (Robertson). The Latin race, Alban Senate, and Rome, refer to the three phases in the national history when the seat of power was respectively Lavinium, Alba Longa, Rome (Walpole). unde: equivalent to qua ex re; from the fact that Aeneas suffered and did thus, originated the Latin race, Alba, and Rome (Frieze). = e quo, and referring back to virum, the main subject of thought throughout the paragraph (F-B). Altae: Rome, like many cities of Italy, was built on elevated ground, for greater security from attack. Perhaps, however, the reference is to its lofty walls (Frieze).</p>
+
+<p><b>8–11: quo..impulerit:</b> an indirect question in apposition to causas (Storr).</p>
+
+<p><b>8: Musa:</b> Calliope, the muse of epic poetry. The muses were daughters of Jupiter and Mnemosyne. They were nine in number. Clio, who presided over history; Calliope over heroic song, Melpomene over tragedy, Thalia over comedy, Erato over love-song and hymns, Euterpe over lyric poetry, Terpsichore over the harp and dances, Polyhymnia over rhetoric and theatrical gestures, and Uranie over astronomy (Robertson). Greek and Latin poets often profess to be merely the mouthpieces of the Muses (Knapp). mihi: the final i of mihi (regularly short) is here long. This is not an arbitrary license, but is a reminiscence of the original quantity of the final syllable (Bennett). memora: Memora is appropriate, as the Muses were connected with memory (Conington). quo numine laeso: an abl. absol. clause, quo being the interrog. adj. The phrase may be taken in two ways: (1) the simpler, “what divine purpose having been thwarted”; (2) “what divinity of hers having been insulted,” i.e., “her divinity having been insulted in what respect” (C-R). As a direct question it would be quod numen laesum est? (Williams). numen is the goddess’s will, wish, or purpose (F-B).</p>
+
+<p><b>9–10: quid:</b> “on what account”; the interrogatives really belong only with the participles, but are made to introduce the whole clause ending with impulerit. More correct but less vigorous would be quod numen laesum sit quidve doluerit ut...impulerit (Knapp).</p>
+
+<p><b>9: Quidve dolens:</b> “Or grieved at what” (F-B). Many verbs of feeling, apparently intransitive, as dolēre, ridēre, take acc. in Latin (Wetherell) (AG 388a, 390b). deum = deorum (F-B) (AG 49d). volvere casus: The idea expressed in volvere is that of a cycle of disasters which have to be passed through in due order. The metaphor is probably derived from the movements of the heavenly bodies and the seasons (Page). In poetry and late prose, after the Greek idiom, verbs of striving, commanding, and advising are used with the infinitive. The regular prose construction would be ut volveret (Walpole) (AG 563).</p>
+
+<p><b>10: insignem pietate virum:</b> Pietas, from which we derive both “piety” and “pity,” has many shades of meaning. In men it is a dutiful regard and affection for those who have a natural claim upon them—(1) for the gods, and especially those of their own home or country; (2) for parents, relatives and fatherland—parentes, propinqui, patria. It is that inward quality which, together with bravery in action, constitutes the leader of men…and the ideal hero (Page). virum: the subject of the infinitives volvere and adire (Carter). labores: involves a comparison with Hercules, who also was a victim of Juno’s persecution (Conway).</p>
+
+<p><b>11: impulerit:</b> subjunctive of indirect question (F-B) (AG 574). Tantaene...irae: “Is there such wrath in heavenly souls?” Animis is dative of possession with sunt understood (Wetherell) (AG 373). The plurural of abstract nouns often, as here, indicates either the intensity or various manifestations of a feeling (C-R).</p>
+
+  </div> <!-- closes column 2-->
+
+</div> <!-- closes the row -->
+</div> <!-- closes the parallel text & translation container -->
