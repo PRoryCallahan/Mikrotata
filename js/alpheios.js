@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event){
     .then(Embedded => {
 
       new Embedded({
-        clientId: prorycallahan.github.io/Mikrotata
+        clientId: "balmas.github.io/Mikrotata"
       }).activate();
 
   })
