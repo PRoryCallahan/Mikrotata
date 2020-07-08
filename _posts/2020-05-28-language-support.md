@@ -16,6 +16,8 @@ Alpheios is installed on all pages using the `portfolio` layout. As with adding 
 
 **Essential:** in `_includes.portfolio.html` change clientId to `yourURL`
 
+For more on embedding Alpheios and other features, see their [exhaustive list of video tutorials](https://alpheios.net/pages/tutorials/) outlining all the many things you can do with Alpheios in your site.
+
 ### Links to Alpheios
 
 While any file using the `portfolio` layout will have Alpheios enabled for the page, you will still need to wrap your text inside a `div` marked with `alpheios-enabled` in its class. That is, `<div class="alpheios-enabled">your text</div>`.
