@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       mode: 'cdn'
     }).then(Embedded => {
       new Embedded({
-        clientId: 'yoursite.github.io'
+        clientId: "{{site.url}}"
       }).activate();
     }).catch(e => {
       console.error(`Import of Alpheios embedded library dependencies failed: ${e}`)
